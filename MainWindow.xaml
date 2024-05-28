@@ -1,0 +1,102 @@
+﻿<Window x:Class="LandmarksAI_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LandmarksAI_App"
+        mc:Ignorable="d"
+        Title="Landmarks Detector" Height="450" Width="800"
+        Background="#333333"
+        Icon="src\favicon.ico">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="Padding" Value="7"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#555555"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#444444"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#666666"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="#444444"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#666666"/>
+        </Style>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="#555555"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="20" Grid.Row="0" Grid.Column="0">
+            <Button Content="Load Image From Local Computer" 
+                    HorizontalAlignment="Center"
+                    Click="ButtonBase_OnClick"/>
+            <TextBlock Text="Or enter an image URL:"
+                       Margin="0,0,0,5"/>
+            <TextBox x:Name="imageUrlTextBox"
+                     Width="400"
+                     HorizontalAlignment="Center"/>
+            <Button Content="Load Image from URL" 
+                    HorizontalAlignment="Center"
+                    Click="LoadImageFromUrl_OnClick"/>
+        </StackPanel>
+
+        <TextBlock Text="Selected Image:"
+                   Margin="20,0,0,5"
+                   Grid.Row="1" Grid.Column="0"/>
+        <Border BorderBrush="Gray" BorderThickness="1" Padding="5" Grid.Row="2" Grid.Column="0">
+            <Image x:Name="selectedImage"  
+                   Stretch="Uniform"
+                   Height="200"
+                   Width="300"/>
+        </Border>
+
+        <GridSplitter Grid.Column="1" 
+                      Grid.RowSpan="3"
+                      Width="5"
+                      Background="Gray" 
+                      HorizontalAlignment="Stretch"/>
+
+        <StackPanel Grid.Column="2"
+                    Grid.RowSpan="3">
+            <TextBlock Text="{Binding Status}"
+                       Margin="20,10,0,0"/>
+            <ListView x:Name="predictionsListView"
+                      VerticalAlignment="Center"
+                      Width="300"
+                      Margin="20">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Landmark" Width="200" DisplayMemberBinding="{Binding TagName}"/>
+                        <GridViewColumn Header="Confidence" Width="80" DisplayMemberBinding="{Binding Probability, StringFormat={}{0:P2}}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBlock Text="Only trust confidence values >80%"
+                       Margin="20,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\LandmarksAI App.exe
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\LandmarksAI App.deps.json
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\LandmarksAI App.runtimeconfig.json
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\LandmarksAI App.dll
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\LandmarksAI App.pdb
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App_MarkupCompile.cache
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App_MarkupCompile.lref
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.g.resources
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.AssemblyInfoInputs.cache
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.AssemblyInfo.cs
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.csproj.CoreCompileInputs.cache
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.dll
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\refint\LandmarksAI App.dll
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.pdb
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.genruntimeconfig.cache
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\ref\LandmarksAI App.dll
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\LandmarksAI App.csproj.AssemblyReference.cache
+C:\Users\ikell\source\repos\WPFMasterclass\LandmarksAI App\obj\Debug\net8.0-windows\Landmark.EA9CA180.Up2Date
